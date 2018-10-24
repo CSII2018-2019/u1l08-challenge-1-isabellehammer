@@ -15,10 +15,9 @@ public class U1L08 {
 		
 		
 		for(i = 0; i < array.length; i++){
-			int temp = array[i];
 			array[i] = array[array.length -i -1];
-			array[array.length -i -1] = temp;
-			System.out.println(temp);//whatever is here needs to save, remove, and replace the number
+			array[array.length -i -1] = array[i];
+			System.out.println(array[i]);//whatever is here needs to save, remove, and replace the number
 		}
 		 
 		
