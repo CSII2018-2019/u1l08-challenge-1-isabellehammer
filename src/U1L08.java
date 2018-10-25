@@ -9,15 +9,18 @@ public class U1L08 {
 		//...any array (changed/added values)
 		//hint: write out algorithm in pseudocode
 		
-		int [] array = {1, 3, 5};
+		int [] array = {1, 3, 5, 7, 9};
 		
 		int i = 0;
 		
 		
-		for(i = 0; i < array.length; i++){
-			array[i] = array[array.length -i -1];
-			array[array.length -i -1] = array[i];
-			System.out.println(array[i]);//whatever is here needs to save, remove, and replace the number
+		for(i = 0; i < array.length/2; i++){
+			int temp = array[array.length - i - 1];
+			array[array.length - i - 1] = array[i];
+			array[i] = temp;
+		}
+		for(i=0; i<array.length; i++) {
+			System.out.println(array[i]);
 		}
 		 
 		
